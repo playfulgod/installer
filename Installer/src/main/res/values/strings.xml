@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">LG Motion Backup</string>
+    <string name="app_intro">This app is to help with the Factory Reset issue when booting to true Clockworkmod Recovery.\n You can backup data before booting to CWM and restore it once rebooted from this app. This app will copy itself to system/app so it will remain installed after a factory reset, so it will require removing manually (if so desired) via adb shell, terminal emulator, or a root file explorer. </string>
+    <string name="warning">WARNING!!!!</string>
+    <string name="warning_info">Rebooting to CWM Recovery will do a Factory Reset and you will loose all of your apps and data.\n Make a backup with the button above or make sure you already have a backup\, and/or prepared to loose everything!</string>
+    <string name="about">About</string>
+    <string name="exit">Exit</string>
+    <string name="about_label">About</string>
+    <string name="about_title"><b>About</b></string>
+    <string name="about_text">Recovery Installer is a  simple app for those who wish to use the flashed ClockworkMod Recovery on the LG Motion MS770.</string>
+    <string name="about_version_label"><b>Version</b></string>
+    <string name="about_version">\nv1.0</string>
+    <string name="help_text">If you notice a bug or have a suggestion on how to improve our app,\n \nContact us at\n\n mgdllcfl@gmail.com</string>
+    <string name="about_author_label"><b>Author</b></string>
+    <string name="about_author">\nDewayne Jones (PlayfulGod)</string>
+    <string name="copyright">Copyright&#169;2013 TechyGeek &#38; MGD LLC\nAll Rights Reserved</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="disclaimer_info">Using this application you accept any and all responsibility with its use.\n\nMGD LLC nor PlayfulGod are liable for any damage incurred from
+        use of this software including but not limited to: monetary loss, data loss, bricks, insanity, aids, mono, spontaneous combustion, paralysis, or hair loss.</string>
+    <string name="credits">Credits</string>
+    <string name="credits_info">Written by Dewayne Jones @(PlayfulGod)\n\nCredit and thanks to thed0ct0r from #cyanogenmod-dev for his assistance with coding the progressbar.\n\nThanks out to developer.android\n\nThanks to gweedo767 for his assistance.</string>
+ </resources>
