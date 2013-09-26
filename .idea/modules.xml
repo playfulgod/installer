@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Installer/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/ComAndroidSupportAppcompatV71800.aar.iml" filepath="$PROJECT_DIR$/Installer/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/ComAndroidSupportAppcompatV71800.aar.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Installer/build/source/buildConfig/buildConfig.iml" filepath="$PROJECT_DIR$/Installer/build/source/buildConfig/buildConfig.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Installer/build/manifests/debug/debug.iml" filepath="$PROJECT_DIR$/Installer/build/manifests/debug/debug.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Installer/src/main/main.iml" filepath="$PROJECT_DIR$/Installer/src/main/main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Installer/build/source/r/r.iml" filepath="$PROJECT_DIR$/Installer/build/source/r/r.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Installer/Installer.iml" filepath="$PROJECT_DIR$/Installer/Installer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/installer.iml" filepath="$PROJECT_DIR$/installer.iml" />
     </modules>
   </component>
 </project>

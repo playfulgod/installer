@@ -114,12 +114,12 @@ public class MainActivity extends Activity {
 
             @Override
             public void onClick(View v) {
-                File directory = new File("/external_sd/MyDataBackup");
+                File directory = new File("/sdcard/external_sd/MyDataBackup");
                 directory.mkdirs();
                 Runtime runtime = Runtime.getRuntime();
                 OutputStreamWriter osw = null;
 
-                String command = "tar -cf /external_sd/MyDataBackup/data.tar /data"; //$(date +%Y%m%d_%H%M%S)-
+                String command = "tar -cf /sdcard/external_sd/MyDataBackup/data.tar /data"; //$(date +%Y%m%d_%H%M%S)-
 
                 try { // Run Script
 
@@ -196,7 +196,7 @@ public class MainActivity extends Activity {
                             Runtime runtime = Runtime.getRuntime();
                             OutputStreamWriter osw = null;
 
-                            String command = "tar -xf /external_sd/MyDataBackup/data.tar -C / && /system/bin/reboot";
+                            String command = "tar -xf /sdcard/external_sd/MyDataBackup/data.tar -C / && /system/bin/reboot";
 
                             try { // Run Script
 
@@ -283,7 +283,7 @@ public class MainActivity extends Activity {
                             Runtime runtime = Runtime.getRuntime();
                             OutputStreamWriter osw = null;
 
-                            String command = "wget -P /data/local/tmp/ http://unleashedprepaids.com/upload/devs/playfulgod/phones/LG/MS770/l0-cwm.lok && dd if=/data/local/tmp/l0-cwm.lok of=/dev/block/platform/msm_sdcc.1/by-name/recovery && rm /data/local/tmp/l0-cwm.lok";
+                            String command = "curl http://unleashedprepaids.com/upload/devs/playfulgod/phones/LG/MS770/l0-cwm.lok > /data/local/tmp/l0-cwm.lok  && dd if=/data/local/tmp/l0-cwm.lok of=/dev/block/platform/msm_sdcc.1/by-name/recovery && rm /data/local/tmp/l0-cwm.lok";
 
                             try { // Run Script
 
@@ -370,7 +370,7 @@ public class MainActivity extends Activity {
                             Process proc = null;
                             OutputStreamWriter osw = null;
 
-                            String command = "cp /data/app/com.techygeek.installer-*.apk /system/app/ && /system/bin/reboot recovery";
+                            String command = "mount -o remount,rw -t ext4 /dev/block/platform/msm_sdcc.1/by-name/system /system && cp /data/app/com.techygeek.installer-*.apk /system/app/ && /system/bin/reboot recovery";
 
                             try { // Run Script
 

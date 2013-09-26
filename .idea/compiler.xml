@@ -2,11 +2,6 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
-    <excludeFromCompile>
-      <directory url="file://$PROJECT_DIR$/Installer/build/manifests/debug/gen" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/Installer/src/main/gen" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/Installer/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/gen" includeSubdirectories="true" />
-    </excludeFromCompile>
     <resourceExtensions />
     <wildcardResourcePatterns>
       <entry name="!?*.java" />
