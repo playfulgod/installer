@@ -114,12 +114,14 @@ public class MainActivity extends Activity {
 
             @Override
             public void onClick(View v) {
-                File directory = new File("/sdcard/external_sd/MyDataBackup");
+                File directory = new File("/storage/sdcard1/MyDataBackup");
                 directory.mkdirs();
                 Runtime runtime = Runtime.getRuntime();
                 OutputStreamWriter osw = null;
 
-                String command = "tar -cf /sdcard/external_sd/MyDataBackup/data.tar /data"; //$(date +%Y%m%d_%H%M%S)-
+                String command = "tar -c /data | gzip -c > /storage/sdcard1/MyDataBackup/data.tar.gz"; //$(date +%Y%m%d_%H%M%S)-
+
+                //String command = "mkdir /sdcard/external_sd/clockworkmod/backup/$(date +%Y%m%d_%H%M) && tar -cf /sdcard/external_sd/clockworkmod/backup/$(date +%Y%m%d_%H%M)/data.tar /data && md5sum /sdcard/external_sd/clockworkmod/backup/$(date +%Y%m%d_%H%M)/data.tar > /sdcard/external_sd/clockworkmod/backup/$(date +%Y%m%d_%H%M)/nandroid.md5";
 
                 try { // Run Script
 
@@ -196,7 +198,7 @@ public class MainActivity extends Activity {
                             Runtime runtime = Runtime.getRuntime();
                             OutputStreamWriter osw = null;
 
-                            String command = "tar -xf /sdcard/external_sd/MyDataBackup/data.tar -C / && /system/bin/reboot";
+                            String command = "tar -xzf /storage/sdcard1/MyDataBackup/data.tar.gz -C / && /system/bin/reboot";
 
                             try { // Run Script
 
